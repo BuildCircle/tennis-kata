@@ -2,7 +2,7 @@
 
 ### Overview
 
-Create a C# Console App that can run a tennis game between two players. Focus on using TDD to detail the requirements and focus on testing the rules of the game. 
+We want to create an app that tracks a game of tennis between two players, eventually calculating the winner. The aim is to build out the below requirements one by one, using tests to drive our code.
 
 ### Requirements
 
