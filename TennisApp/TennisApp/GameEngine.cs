@@ -1,3 +1,5 @@
+using System;
+using System.Linq;
 using System.Security.Cryptography;
 
 namespace TennisApp
@@ -12,6 +14,10 @@ namespace TennisApp
     {
         public PlayerObject PlayerOne;
         public PlayerObject PlayerTwo;
+
+        public PlayerObject Winner;
+
+        public PlayerObject[] Players;
         public GameEngine(string playerOneName, string playerTwoName)
         {
             PlayerOne = new PlayerObject()
@@ -24,6 +30,19 @@ namespace TennisApp
                 Name = playerTwoName,
                 Score = 0
             };
+            
+            Players = new PlayerObject[] {PlayerOne, PlayerTwo};
+        }
+
+        public void Play(string winnerName)
+        {
+            var winner = Players.FirstOrDefault(x => x.Name == winnerName);
+            winner!.Score += 1;
+        }
+
+        public void CheckWinner()
+        {
+            
         }
     }
 }
