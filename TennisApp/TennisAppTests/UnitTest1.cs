@@ -13,10 +13,10 @@ namespace TennisAppTests
         [Test]
         public void Given_TwoPlayersArePlaying_When_TheGameStarts_Then_TheirScoresShouldBeZero()
         {
-            var game = new GameEngine();
+            var game = new GameEngine("test1", "test2");
             
-            Assert.AreEqual(game.PlayerOneScore, game.PlayerTwoScore);
-            Assert.AreEqual(0, game.PlayerOneScore);
+            Assert.AreEqual(game.PlayerOne.Score, game.PlayerTwo.Score);
+            Assert.AreEqual(0, game.PlayerOne.Score);
         }
     }
 }
