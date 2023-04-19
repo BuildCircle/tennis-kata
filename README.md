@@ -7,6 +7,7 @@ Create a C# Console App that can run a tennis game between two players. Focus on
 ### Requirements
 
 - Each player should start with a score of zero.
+- The game should calculate a winner based on a coin flip.
 - When a player wins a round their score increases.
 - The game should be won by the first player to reach a score of at least 4 points and be ahead of their opponent by at least 2 points.
 - If the game is tied at 3-3, it should be referred to as "deuce".
