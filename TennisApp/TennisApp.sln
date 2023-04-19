@@ -1,0 +1,22 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TennisApp", "TennisApp\TennisApp.csproj", "{B454DADF-6B51-4C3B-ADA0-244B30854E75}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TennisAppTests", "TennisAppTests\TennisAppTests.csproj", "{6D82EC59-D8F1-41E7-8021-A52EB6B490DA}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{B454DADF-6B51-4C3B-ADA0-244B30854E75}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B454DADF-6B51-4C3B-ADA0-244B30854E75}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B454DADF-6B51-4C3B-ADA0-244B30854E75}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B454DADF-6B51-4C3B-ADA0-244B30854E75}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6D82EC59-D8F1-41E7-8021-A52EB6B490DA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6D82EC59-D8F1-41E7-8021-A52EB6B490DA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6D82EC59-D8F1-41E7-8021-A52EB6B490DA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6D82EC59-D8F1-41E7-8021-A52EB6B490DA}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal
