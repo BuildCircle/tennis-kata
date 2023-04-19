@@ -1,4 +1,5 @@
 using NUnit.Framework;
+using TennisApp;
 
 namespace TennisAppTests
 {
@@ -10,9 +11,12 @@ namespace TennisAppTests
         }
 
         [Test]
-        public void Test1()
+        public void Given_TwoPlayersArePlaying_When_TheGameStarts_Then_TheirScoresShouldBeZero()
         {
-            Assert.Pass();
+            var game = new GameEngine();
+            
+            Assert.AreEqual(game.PlayerOneScore, game.PlayerTwoScore);
+            Assert.AreEqual(0, game.PlayerOneScore);
         }
     }
 }
