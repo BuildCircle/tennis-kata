@@ -6,10 +6,9 @@ We want to create an app that tracks a game of tennis between two players, event
 
 ### Requirements
 
+- The game takes two names on startup, indicating player one and player two.
 - Each player should start with a score of zero.
-- The game should take two names on startup, indicating player one and player two.
-- A player wins based on name entered into command line.
-- When a player wins a round their score increases.
+- When a player wins a round, the user inputs their name into the command line, and their score increases.
 - The game should be won by the first player to reach a score of at least 4 points and be ahead of their opponent by at least 2 points.
 - If the game is tied at 3-3, it should be referred to as "deuce".
 - If the game is in "deuce", a player must win two points in a row to win the game.
