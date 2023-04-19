@@ -34,15 +34,21 @@ namespace TennisApp
             Players = new PlayerObject[] {PlayerOne, PlayerTwo};
         }
 
-        public void Play(string winnerName)
+        public void PlayRound(string winnerName)
         {
-            var winner = Players.FirstOrDefault(x => x.Name == winnerName);
-            winner!.Score += 1;
+            if (Winner != null)
+            {
+                throw new InvalidOperationException();
+            }
+            var roundWinner = Players.FirstOrDefault(x => x.Name == winnerName);
+            var roundLoser = Players.FirstOrDefault(x => x.Name != winnerName);
+            roundWinner!.Score += 1;
+
+            if (roundWinner.Score >= 4 && roundWinner.Score - roundLoser.Score >= 2)
+            {
+                Winner = roundWinner;
+            }
         }
 
-        public void CheckWinner()
-        {
-            
-        }
     }
 }
