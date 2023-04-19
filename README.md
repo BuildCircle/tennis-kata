@@ -1,10 +1,12 @@
 # tennis-kata
 
+### Overview
+
+Create a C# Console App that can run a tennis game between two players. Focus on using TDD to detail the requirements and focus on testing the rules of the game. 
+
 ### Requirements
 
-- The program should simulate a game of tennis between two players.
 - Each player should start with a score of zero.
-- The game should have a scoring system, with points awarded to players based on the outcome of each play.
 - The game should be won by the first player to reach a score of at least 4 points and be ahead of their opponent by at least 2 points.
 - If the game is tied at 3-3, it should be referred to as "deuce".
 - If the game is in "deuce", a player must win two points in a row to win the game.
